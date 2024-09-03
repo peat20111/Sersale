@@ -4,7 +4,7 @@
     "name": "Взуття 1",
     "description": "Опис взуття 1. Ціна: 1000 грн.",
     "price": "1000 грн",
-    "image": "images/shoe1.jpg",
+    "image": "images/shoe1.jpg",  // шлях до зображення
     "paypal_id": "ВАШ_PAYPAL_BUTTON_ID_1"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Взуття 2",
     "description": "Опис взуття 2. Ціна: 1200 грн.",
     "price": "1200 грн",
-    "image": "images/shoe2.jpg",
+    "image": "images/shoe2.jpg",  // шлях до зображення
     "paypal_id": "ВАШ_PAYPAL_BUTTON_ID_2"
   }
 ]
