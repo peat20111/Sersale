@@ -9,7 +9,6 @@ body {
     color: #333;
 }
 
-
 header {
     background-color: white;
     border-bottom: 1px solid #ddd;
@@ -29,9 +28,10 @@ nav a:hover {
 }
 
 .hero {
-    padding: 10px 5px;
+    padding: 40px 20px; /* Збільшено для кращого вигляду */
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: rgba(244, 244, 244, 0.8); /* Напівпрозорий фон для контрасту з фоном */
+    backdrop-filter: blur(5px); /* Розмиття фону за секцією */
 }
 
 .hero h1 {
@@ -45,12 +45,13 @@ nav a:hover {
 }
 
 .hero button {
-    padding: 2px 3px;
+    padding: 10px 20px; /* Збільшено для зручності */
     background-color: #007BFF;
     color: white;
     border: none;
     cursor: pointer;
     font-size: 1em;
+    border-radius: 5px; /* Краї кнопки стали округленими */
 }
 
 .hero button:hover {
@@ -59,8 +60,10 @@ nav a:hover {
 
 .products {
     display: flex;
+    flex-wrap: wrap; /* Додає можливість обтікання товарів на новий рядок */
     justify-content: space-around;
-    padding: 40px 0;
+    padding: 40px 20px;
+    gap: 20px; /* Проміжок між картками товарів */
 }
 
 .product-card {
@@ -70,6 +73,7 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 300px;
+    flex: 1 1 calc(33% - 40px); /* Зробити картки гнучкими, що займають до 1/3 ширини контейнера */
 }
 
 .product-card img {
