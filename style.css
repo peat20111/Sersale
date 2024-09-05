@@ -31,7 +31,6 @@ nav a:hover {
     padding: 40px 20px;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8); /* Світлий фон з напівпрозорістю */
-    backdrop-filter: blur(5px); /* Розмиття фону за секцією */
     border-radius: 10px; /* Закруглені кути для контенту */
 }
 
@@ -68,7 +67,7 @@ nav a:hover {
 }
 
 .product-card {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9); /* Прозорий білий фон для карток товарів */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -93,7 +92,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: rgba(51, 51, 51, 0.9); /* Темний фон з напівпрозорістю */
+    background-color: rgba(51, 51, 51, 0.8); /* Темний фон з напівпрозорістю */
     color: white;
     padding: 20px;
     text-align: center;
