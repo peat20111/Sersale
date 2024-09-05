@@ -41,3 +41,42 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зміна кольору фону</title>
+</head>
+<body>
+
+<h1>Привіт!</h1>
+<button id="changeColorButton">Змінити фон на зелений</button>
+<button id="changeToRedButton">Змінити фон на червоний (Z)</button>
+
+<script>
+    // Функція, що змінює колір фону на зелений
+    function changeToGreen() {
+        document.body.style.backgroundColor = "lightgreen";
+    }
+
+    // Функція, що змінює колір фону на червоний
+    function changeToRed() {
+        document.body.style.backgroundColor = "red";
+    }
+
+    // Додаємо слухачі подій на кнопки
+    document.getElementById("changeColorButton").addEventListener("click", changeToGreen);
+    document.getElementById("changeToRedButton").addEventListener("click", changeToRed);
+
+    // Додаємо підтримку клавіші 'Z' для зміни кольору на червоний
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "z" || event.key === "Z") {
+            changeToRed();
+        }
+    });
+</script>
+
+</body>
+</html>
