@@ -2,81 +2,46 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин взуття</title>
+    <title>Minimalistic Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Магазин взуття</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Товари</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Journal</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
-    <main>
-        <div class="container">
-            <section id="products">
-                <h2>Наші товари</h2>
-                <!-- Контейнер для товарів -->
-                <div id="product-list"></div>
-            </section>
+    <section class="hero">
+        <h1>Welcome to Minimalistic Shop</h1>
+        <p>Discover simple, yet elegant items for your life.</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Simple description of the product.</p>
         </div>
-    </main>
+        <div class="product-card">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Simple description of the product.</p>
+        </div>
+        <div class="product-card">
+            <img src="product3.jpg" alt="Product 3">
+            <h2>Product 3</h2>
+            <p>Simple description of the product.</p>
+        </div>
+    </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Магазин взуття. Всі права захищені.</p>
-        </div>
+        <p>&copy; 2024 Minimalistic Shop. All rights reserved.</p>
     </footer>
-
-    <!-- Підключення JavaScript файлу -->
-    <script src="script.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Зміна кольору фону</title>
-</head>
-<body>
-
-<h1>Привіт!</h1>
-<button id="changeColorButton">Змінити фон на зелений</button>
-<button id="changeToRedButton">Змінити фон на червоний (Z)</button>
-
-<script>
-    // Функція, що змінює колір фону на зелений
-    function changeToGreen() {
-        document.body.style.backgroundColor = "lightgreen";
-    }
-
-    // Функція, що змінює колір фону на червоний
-    function changeToRed() {
-        document.body.style.backgroundColor = "red";
-    }
-
-    // Додаємо слухачі подій на кнопки
-    document.getElementById("changeColorButton").addEventListener("click", changeToGreen);
-    document.getElementById("changeToRedButton").addEventListener("click", changeToRed);
-
-    // Додаємо підтримку клавіші 'Z' для зміни кольору на червоний
-    document.addEventListener("keydown", function(event) {
-        if (event.key === "z" || event.key === "Z") {
-            changeToRed();
-        }
-    });
-</script>
-
 </body>
 </html>
