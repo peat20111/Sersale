@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.8); /* Світлий фон з напівпрозорістю */
+    background-color: rgba(0.0); /* Світлий фон з напівпрозорістю */
     border-bottom: 1px solid #ddd;
     padding: 20px;
     text-align: center;
