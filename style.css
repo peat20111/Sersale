@@ -30,7 +30,7 @@ nav a:hover {
 .hero {
     padding: 40px 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Світлий фон з напівпрозорістю */
+    background-color: rgba(255, 255, 255, 0.0); /* Світлий фон з напівпрозорістю */
     border-radius: 10px; /* Закруглені кути для контенту */
 }
 
