@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('https://github.com/peat20111/Sersale/blob/Sersale/images/wa.jpg');
+    background-image: url('images/wa.jpg');
     background-size: cover; /* Зображення покриває весь фон */
     background-position: center; /* Центрує зображення */
     background-repeat: no-repeat; /* Не повторює зображення */
