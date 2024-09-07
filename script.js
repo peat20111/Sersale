@@ -1,29 +1,44 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Завантажуємо дані з JSON файлу
-    fetch('products.json')
-        .then(response => response.json())
-        .then(products => {
-            const productList = document.getElementById('product-list');
+<script>
+    // Масив продуктів
+    const products = [
+        {
+            name: "Product 1",
+            description: "This is the description for product 1.",
+            price: 100,
+            image: "images/product1.jpg"
+        },
+        {
+            name: "Product 2",
+            description: "This is the description for product 2.",
+            price: 150,
+            image: "images/product2.jpg"
+        },
+        {
+            name: "Product 3",
+            description: "This is the description for product 3.",
+            price: 200,
+            image: "images/product3.jpg"
+        }
+        // Додавайте більше продуктів за необхідністю
+    ];
 
-            products.forEach(product => {
-                // Створюємо HTML для кожного товару
-                const productElement = document.createElement('div');
-                productElement.classList.add('product');
-                
-                productElement.innerHTML = `
+    // Функція для рендерингу продуктів на сторінку
+    function renderProducts() {
+        const productsContainer = document.getElementById('products-container');
+        products.forEach(product => {
+            const productCard = `
+                <div class="product-card">
                     <img src="${product.image}" alt="${product.name}">
-                    <h3>${product.name}</h3>
+                    <h2>${product.name}</h2>
                     <p>${product.description}</p>
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                        <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="${product.paypal_id}">
-                        <input type="submit" value="Купити зараз" class="buy-button">
-                    </form>
-                `;
+                    <p><strong>Price: $${product.price}</strong></p>
+                    <button>Add to Cart</button>
+                </div>
+            `;
+            productsContainer.innerHTML += productCard;
+        });
+    }
 
-                // Додаємо створений елемент на сторінку
-                productList.appendChild(productElement);
-            });
-        })
-        .catch(error => console.error('Помилка при завантаженні даних:', error));
-});
+    // Виклик функції для відображення продуктів
+    renderProducts();
+</script>
