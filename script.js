@@ -8,7 +8,7 @@
             image: "images/product1.jpg"
         },
         {
-            name: "Product 2",
+            name: "Product 55",
             description: "This is the description for product 2.",
             price: 150,
             image: "images/product2.jpg"
