@@ -2,22 +2,21 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/wa.jpg');
-    background-size: cover; /* Зображення покриває весь фон */
-    background-position: center; /* Центрує зображення */
-    background-repeat: no-repeat; /* Не повторює зображення */
+    background-color: black; /* Чорний фон */
+    background-image: linear-gradient(90deg, rgba(128, 128, 128, 0.1) 10%, transparent 10%, transparent 50%, rgba(128, 128, 128, 0.1) 50%);
+    background-size: 50px 50px; /* Сірі полоски */
     color: #333;
 }
 
 header {
-    background-color: rgba(0.0); /* Світлий фон з напівпрозорістю */
+    background-color: rgba(0, 0, 0, 0.5); /* Чорний фон з напівпрозорістю */
     border-bottom: 1px solid #ddd;
     padding: 20px;
     text-align: center;
 }
 
 nav a {
-    color: #333;
+    color: #fff; /* Білий колір для посилань */
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -30,18 +29,20 @@ nav a:hover {
 .hero {
     padding: 40px 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.0); /* Світлий фон з напівпрозорістю */
+    background-color: rgba(255, 255, 255, 0.1); /* Світлий фон з напівпрозорістю */
     border-radius: 10px; /* Закруглені кути для контенту */
 }
 
 .hero h1 {
     font-size: 3em;
     margin: 0;
+    color: #fff; /* Білий колір тексту */
 }
 
 .hero p {
     font-size: 1.2em;
     margin: 20px 0;
+    color: #fff; /* Білий колір тексту */
 }
 
 .hero button {
